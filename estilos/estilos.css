@@ -25,7 +25,7 @@ body {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-  background-color: #3e7f54;
+  background-color: #4f9d693b;
   justify-content: center;
   align-items: flex-end;
 }
@@ -171,10 +171,9 @@ body {
 /* Información Hidroponía */
 .hidroponia-info {
   padding: 4rem 2rem;
-  background-color: #4f9d69;
-  max-width: 90%;
-  margin: 2rem auto 20px;
-  border-radius: 1rem;
+  background-color: #f4f4f4;
+  max-width: 100%;
+  margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -190,21 +189,21 @@ body {
 }
 
 .hidroponia-info h2 {
-  font-size: 2.3rem;
-  color: #fff;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #4f9d69;
+  margin-bottom: 0.9rem;
 }
 
 .hidroponia-info p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: 'Lora', serif;
-  color: #fff;
-  margin-bottom: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
   line-height: 1.7;
 }
 
 .boton-info {
-  background-color: #3e7f54;
+  background-color: #4f9d6977;
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -216,16 +215,16 @@ body {
 }
 
 .boton-info:hover {
-  background-color: #4f9d69;
+  background-color: #4f9d6923;
   color: #fff;
 }
 
 /* Sobre nosotros */
 .sobre-nosotros {
-  padding: 4rem 2rem;
-  background-color: #4f9d69;
-  max-width: 90%;
-  margin: 2rem auto 20px;
+  padding: 3rem 2rem;
+  background-color: #4f9d6985;
+  max-width: 95%;
+  margin: 1rem auto;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -242,22 +241,23 @@ body {
 }
 
 .texto-nos {
-  padding: 2rem;
-  background-color: #4f9d69;
+  padding: 1rem;
+  background-color: transparent;
   max-width: 900px;
-  margin: 0 auto;
-  border-radius: 1rem;
+  margin: auto;
+  border-radius: 0;
   text-align: center;
+  box-shadow: none;
 }
 
 .texto-nos h2 {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .texto-nos p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: 'Lora', serif;
   color: #fff;
   line-height: 1.7;
@@ -265,9 +265,9 @@ body {
 
 .intro-nos p,
 #contenido-oculto p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .imagen-nos {
@@ -296,7 +296,7 @@ body {
 }
 
 #boton-leer-mas {
-  background-color: #3e7f54;
+  background-color: #4f9d6977;
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -309,7 +309,7 @@ body {
 }
 
 #boton-leer-mas:hover {
-  background-color: #4f9d69;
+  background-color: #4f9d6923;
 }
 
 
@@ -322,7 +322,7 @@ body {
 }
 
 .noticias h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -354,12 +354,12 @@ body {
 }
 
 .contenido-noticia .fecha {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #777;
 }
 
 .contenido-noticia h3 {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin: 0.5rem 0;
 }
 
@@ -379,7 +379,7 @@ body {
 }
 
 .contenido-noticia a:hover {
-  background-color: #3e7f54;
+  background-color: #4f9d69d3;
 }
 
 /* Botones - Noticias */
@@ -494,24 +494,26 @@ body {
   padding-top: 30px;
 }
 
-.pagina-hidroponia main.contenido-hidroponia {
-  padding: 4rem 2rem;
-  margin: 2rem auto 20px;
+.pagina-hidroponia main.contenido-hidroponia .contenedor {
+  padding: 3rem 2rem;
+  margin: 3rem auto 20px;
   border-radius: 1rem;
   text-align: center;
+
 }
 
 .pagina-hidroponia .contenido-hidroponia h1,
 .pagina-hidroponia .contenido-hidroponia h2 {
   color: #4f9d69;
   margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 .pagina-hidroponia .contenedor {
   padding: 4rem 2rem;
   background-color: #fff;
-  max-width: 90%;
-  margin: 2rem auto 20px;
+  max-width: 95%;
+  margin: 1rem auto;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -520,7 +522,7 @@ body {
 .pagina-hidroponia .que-es p,
 .pagina-hidroponia .sistemas p {
   margin-bottom: 15px;
-  font-size: 1.1em;
+  font-size: 0.9rem;
 }
 
 .pagina-hidroponia .imagen-hidroponia {
@@ -626,15 +628,6 @@ body {
     margin: -30px 0;
   }
 
-  .pagina-hidroponia .contenedor {
-    padding: 2rem 1rem;
-  }
-
-  .que-es p,
-  .sistemas p {
-    font-size: 0.95em;
-  }
-
   .imagen-hidroponia {
     width: 100%;
   }
@@ -659,10 +652,6 @@ body {
 
   .portada p {
     font-size: 1rem;
-  }
-
-  .texto-nos {
-    padding: 1rem;
   }
 
   .imagen-nos {
@@ -691,21 +680,10 @@ body {
     font-size: 0.95rem;
   }
 
-  .pagina-hidroponia h1 {
-    font-size: 1.5rem;
-  }
-
-  .pagina-hidroponia h2 {
-    font-size: 1.3rem;
-  }
-
-  .que-es p,
-  .sistemas p {
-    font-size: 0.9em;
-  }
-
   .imagen-hidroponia {
     width: 100%;
     margin: 15px auto;
   }
+
+  
 }
