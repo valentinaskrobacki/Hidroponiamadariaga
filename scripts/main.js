@@ -11,38 +11,61 @@ navLinks.forEach(link => {
 
 // --------------- Portada ---------------
 
-// Cambiar fondo dinámicamente
+// Elementos
 const portada = document.querySelector('.portada');
+const titulo = document.getElementById('portada-titulo');
+const texto = document.getElementById('portada-texto');
 
-// Lista de imágenes
-const imagenes = [
-  'imagenes/portada.png',
-  'imagenes/portada1.png',
-  'imagenes/portada2.png'
+// Lista de slides (imagen + titulo + texto)
+const slides = [
+  {
+    imagen: 'imagenes/portada.png',
+    titulo: 'Hidroponía Madariaga',
+    texto: 'Tecnología en sabores tradicionales'
+  },
+  {
+    imagen: 'imagenes/portada1.png',
+    titulo: 'Titulo 2',
+    texto: 'Texto 2'
+  },
+  {
+    imagen: 'imagenes/portada2.png',
+    titulo: 'Titulo 3',
+    texto: 'Texto 3'
+  }
 ];
 
 let indice = 0;
 
 function cambiarFondo() {
-  portada.style.backgroundImage = `url(${imagenes[indice]})`;
-  indice = (indice + 1) % imagenes.length;
+  // Cambiar imagen
+  portada.style.backgroundImage = `url(${slides[indice].imagen})`;
+
+  // Reiniciar animación
+  titulo.classList.remove('fade-in-up');
+  texto.classList.remove('fade-in-up', 'delay');
+
+  // Forzar reflow
+  void titulo.offsetWidth;
+  void texto.offsetWidth;
+
+  // Cambiar texto
+  titulo.textContent = slides[indice].titulo;
+  texto.textContent = slides[indice].texto;
+
+  // Reagregar clases para animación
+  titulo.classList.add('fade-in-up');
+  texto.classList.add('fade-in-up', 'delay');
+
+  // Avanzar al siguiente
+  indice = (indice + 1) % slides.length;
 }
 
 // Cambia cada 6 segundos
 setInterval(cambiarFondo, 6000);
 
-// Cargar la primera imagen al iniciar
+// Cargar la primera al iniciar
 window.addEventListener('DOMContentLoaded', cambiarFondo);
-
-// --------------- Mostrar / Ocultar contenido sobrenos ---------------
-
-const boton = document.getElementById('boton-leer-mas');
-const contenido = document.getElementById('contenido-oculto');
-
-boton.addEventListener('click', () => {
-  contenido.classList.toggle('mostrar');
-  boton.textContent = contenido.classList.contains('mostrar') ? 'Leer menos' : 'Leer más';
-});
 
 
 // --------------- Noticias - Carrusel ---------------
