@@ -19,19 +19,21 @@ const texto = document.getElementById('portada-texto');
 // Lista de slides (imagen + titulo + texto)
 const slides = [
   {
-    imagen: 'imagenes/portada.png',
+    imagen: 'imagenes/portada1.jpg',
     titulo: 'Hidroponía Madariaga',
-    texto: 'Tecnología en sabores tradicionales'
+    texto: 'Buenos Aires, Argentina'
   },
   {
-    imagen: 'imagenes/portada1.png',
-    titulo: 'Titulo 2',
-    texto: 'Texto 2'
+    imagen: 'imagenes/portada2.jpg',
+    texto: 'Alimentos sanos, frescos y nutritivos'
   },
   {
-    imagen: 'imagenes/portada2.png',
-    titulo: 'Titulo 3',
-    texto: 'Texto 3'
+    imagen: 'imagenes/portada3.jpg',
+    texto: 'Desde la semilla a la mesa'
+  },
+  {
+    imagen: 'imagenes/portada4.png',
+    texto: 'Tecnología aplicada, sistema NFT'
   }
 ];
 
