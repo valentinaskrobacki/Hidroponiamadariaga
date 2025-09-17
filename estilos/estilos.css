@@ -638,11 +638,6 @@ body {
     margin-right: 5%;
   }
 
-  .swiper-slide {
-    width: 420px;
-  height: 620px;
-  }
-
   .producto-card {
     flex-direction: row;
     align-items: center;
