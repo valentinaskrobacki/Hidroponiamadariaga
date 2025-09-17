@@ -211,7 +211,7 @@ body {
 
 .section-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   letter-spacing: 1.5px;
   margin-bottom: 2.5rem;
@@ -234,8 +234,8 @@ body {
 }
 
 .swiper-slide {
-  width: 50vh;
-  height: 70vh;
+  width: 380px;
+  height: 580px;
   background-color: #5f8b6e;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
@@ -636,6 +636,11 @@ body {
   .carrusel {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .swiper-slide {
+    width: 420px;
+  height: 620px;
   }
 
   .producto-card {
