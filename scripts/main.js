@@ -1,3 +1,23 @@
+// --------------- Ocultar - Header ---------------
+
+let lastScrollTop = 0;
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop) {
+    // Scrollea hacia abajo → esconder header
+    header.style.transform = "translateY(-100%)";
+  } else {
+    // Scrollea hacia arriba → mostrar header
+    header.style.transform = "translateY(0)";
+  }
+
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
+});
+
+
 // --------------- Ocultar - Menú ---------------
 
 const navLinks = document.querySelectorAll('.navbar a');
