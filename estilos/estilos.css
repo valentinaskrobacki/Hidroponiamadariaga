@@ -541,7 +541,7 @@ body {
 .contacto-info {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.2rem;
 }
 
 .contacto-col h4 {
@@ -863,8 +863,8 @@ body {
     width: 60px;
     height: 60px;
     font-size: 1.8rem;
-    right: 30px;
-    bottom: 30px;
+    right: 40px;
+    bottom: 40px;
   }
 
   .contacto-container {
@@ -949,7 +949,7 @@ body {
 
   .footer-col p,
   .footer-col a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .footer-bottom {
@@ -960,7 +960,7 @@ body {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
-    right: 20px;
-    bottom: 20px;
+    right: 30px;
+    bottom: 30px;
   }
 }
