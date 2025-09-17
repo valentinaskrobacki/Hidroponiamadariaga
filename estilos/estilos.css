@@ -247,6 +247,25 @@ body {
   align-items: center;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1);
+}
+
 .product-title {
   font-size: 1.2rem;
   color: #fff;
@@ -824,6 +843,11 @@ body {
     font-size: 1.8rem;
     right: 30px;
     bottom: 30px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; 
   }
 
   .btn-1 {
