@@ -78,7 +78,7 @@
                     <h3 class="product-title">Lechuga Mantecosa</h3>
                     <a href="productos.html#lechuga-mantecosa" class="product-link">
                         <div class="product-img">
-                            <img src="imagenes/lechuga-morada.png" alt="Lechuga Mantecosa">
+                            <img src="imagenes/lechuga-mantecosa.png" alt="Lechuga Mantecosa">
                         </div>
                     </a>
                     <a href="productos.html#lechuga-mantecosa" class="btn-1">Leer más</a>
@@ -89,7 +89,7 @@
                     <h3 class="product-title">Lechuga Crespa</h3>
                     <a href="productos.html#lechuga-crespa" class="product-link">
                         <div class="product-img">
-                            <img src="imagenes/lechuga-morada.png" alt="Lechuga Crespa">
+                            <img src="imagenes/lechuga-crespa.png" alt="Lechuga Crespa">
                         </div>
                     </a>
                     <a href="productos.html#lechuga-crespa" class="btn-1">Leer más</a>
@@ -226,60 +226,48 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- Footer 
     <footer class="footer">
         <div class="footer-container">
 
-            <!-- Columna 1 -->
+            
             <div class="footer-col logo-col">
                 <img src="imagenes/logo1.png" alt="Logo Hidroponía" class="footer-logo">
                 <p>Tecnología en sabores tradicionales.</p>
             </div>
 
-            <!-- Columna 2 -->
+            
             <div class="footer-col contacto-col" id="contacto">
                 <h4>Contacto</h4>
                 <div class="contacto-container">
                     <div class="contacto-info">
-                        <!-- Teléfono -->
                         <div class="contacto-item">
-                            <p>
-                                <i class="fa-brands fa-whatsapp"></i>
-                                <a href="tel:+5492254620229">2254620229</a>
-                            </p>
+                            <a href="https://wa.me/5492254620229" class="fa-brands fa-whatsapp" title="WhatsApp"></a>
                         </div>
-
-                        <!-- Mail -->
                         <div class="contacto-item">
-                            <p>
-                                <i class="fa-regular fa-envelope"></i>
-                                <a href="mailto:hidroponiamadariaga@gmail.com">hidroponiamadariaga@gmail.com</a>
-                            </p>
+                            <a href="mailto:hidroponiamadariaga@gmail.com" class="fa-regular fa-envelope"
+                                title="Email"></a>
                         </div>
-
-                        <!-- Redes sociales -->
                         <div class="contacto-item">
-                            <div class="footer-social">
-                                <a href="https://www.instagram.com/hidroponia.madariaga"
-                                    class="fa-brands fa-instagram"></a>
-                            </div>
+                            <a href="https://www.instagram.com/hidroponia.madariaga" class="fa-brands fa-instagram"
+                                title="Instagram"></a>
                         </div>
                     </div>
 
-                    <!-- Mapa + Dirección -->
+                   
                     <div class="mapa">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101987.23815020938!2d-57.256445356640626!3d-36.9835177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b9d19cdb4f1ed%3A0x7a8ffd307af05e48!2sHidroponia%20Madariaga!5e0!3m2!1ses-419!2sar!4v1756329582946!5m2!1ses-419!2sar"
-                            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                        <!-- Dirección debajo del mapa -->
+                        
                         <div class="direccion">
                             <p>
                                 <i class="fa-solid fa-location-dot"></i>
                                 <a href="https://www.google.com/maps/search/?api=1&query=RP56+Km+58,+Gral.+Juan+Madariaga,+Provincia+de+Buenos+Aires"
                                     target="_blank">
-                                    RP56 Km 58, Gral. Juan Madariaga, <br>Provincia de Buenos Aires
+                                    RP56 Km 58, Gral. Juan Madariaga
                                 </a>
                             </p>
                         </div>
@@ -291,6 +279,62 @@
 
         <div class="footer-bottom">
             <p>© 2025 Hidroponia Madariaga - Todos los derechos reservados</p>
+        </div>
+    </footer> -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="contact-box">
+
+                <!-- Formulario -->
+                <div class="contact-form">
+                    <h3>Contáctanos</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mldojzdq" method="POST">
+                        <div class="form-row">
+                            <input type="text" name="nombre" placeholder="Nombre" required />
+                            <input type="email" name="email" placeholder="Email" required />
+                        </div>
+                        <input type="text" name="asunto" placeholder="Asunto" required />
+                        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101987.23815020938!2d-57.256445356640626!3d-36.9835177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b9d19cdb4f1ed%3A0x7a8ffd307af05e48!2sHidroponia%20Madariaga!5e0!3m2!1ses-419!2sar!4v1756329582946!5m2!1ses-419!2sar"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Iconos sociales -->
+            <div class="social-icons">
+                <a href="https://instagram.com/hidroponia.madariaga" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/5492254620229" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:hidroponiamadariaga@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <div class="address">
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=RP56+Km+58,+Gral.+Juan+Madariaga,+Provincia+de+Buenos+Aires"
+                            target="_blank">
+                            RP56 Km 58, Gral. Juan Madariaga
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Hidroponia Madariaga - Todos los derechos reservados</p>
+            </div>
         </div>
     </footer>
 

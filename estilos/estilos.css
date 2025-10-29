@@ -412,7 +412,6 @@ body {
 /* Productos - HTML */
 
 .body-html {
-  /* background: linear-gradient(to right, #4f9d6967 0%, #4f9d692c 50%, #4f9d6967 100%);*/
   background-color: #5f8b6e;
 }
 
@@ -485,9 +484,10 @@ body {
   line-height: 1.5;
 }
 
-
 /* Footer */
-.footer {
+
+
+/*.footer {
   background-color: #759c82;
   color: #fff;
   padding: 3rem 1rem 1rem;
@@ -495,7 +495,7 @@ body {
 }
 
 .body-html .footer {
-  background-color: #4f8ccf;
+  background-color: #5f8b6e;
 }
 
 .footer-container {
@@ -528,6 +528,7 @@ body {
   margin-bottom: 1rem;
   color: #fff;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  width: 38%;
   padding-bottom: 0.5rem;
 }
 
@@ -541,39 +542,31 @@ body {
   color: #ccebd4;
 }
 
-.footer-col p {
-  margin-bottom: 2.5rem;
-  font-style: italic;
-}
-
-.footer-social a {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-  color: #ccebd4;
+.contacto-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .contacto-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  gap: 0.6;
 }
 
-.contacto-col h4 {
-  margin-bottom: 1.5rem;
-}
-
-.contacto-info p {
-  margin: 0.4rem 0;
+.contacto-info a {
+  font-size: 1.6rem;
+  color: #fff;
+  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .contacto-item {
-  width: 100%;
-  margin-bottom: 0.3rem;
+  margin: 0;
+  width: auto;
 }
 
 .direccion {
@@ -586,15 +579,204 @@ body {
   text-align: center;
 }
 
+.mapa iframe {
+  width: 500px !important;
+  height: 300px !important;
+  max-width: none !important;
+}
+
 .mapa {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -55px;
   gap: 0.5rem;
 }
 
 .mapa-container {
   margin-top: 1rem;
+}  */
+
+.footer {
+  background-color: #5f8b6e;
+  color: white;
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-inner {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-box {
+  background-color: #f1f3f5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2.5rem;
+}
+
+/* Formulario */
+.contact-form {
+  padding: 2.2rem 2rem;
+}
+
+.contact-form h3 {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  color: #252525;
+  position: relative;
+}
+
+.contact-form h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: #252525;
+  margin: 10px 0 0;
+  border-radius: 2px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: white;
+  color: #333;
+}
+
+input,
+textarea,
+button {
+  margin-bottom: 1.3rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4f9d69;
+  box-shadow: 0 0 5px rgba(79, 157, 105, 0.3);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #5f8b6e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+}
+
+button:hover {
+  background: white;
+  color: #4f9d69;
+  border: 1px solid #4f9d69;
+}
+
+/* Mapa */
+.map {
+  border-left: 1px solid #e0e0e0;
+  height: 100%;
+  min-height: 380px;
+  position: relative;
+  box-shadow: -4px 0 8px -4px rgba(0, 0, 0, 0.10);
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #e0e0e0;
+  z-index: 1;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  display: block;
+  border: 0;
+}
+
+/* Iconos sociales */
+.social-icons {
+  max-width: 950px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+}
+
+.social-icons a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #a8d6b8;
+  transform: scale(1.15);
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.address p {
+  margin: 0;
+}
+
+.address a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.address a:hover {
+  color: #a8d6b8;
+}
+
+.address i {
+  color: white;
 }
 
 .footer-bottom {
@@ -673,6 +855,8 @@ body {
     text-align: left;
   }
 
+
+  /*
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
@@ -742,6 +926,7 @@ body {
     width: 380px;
     height: 280px;
   }
+  */
 
   .header::before {
     background: rgba(0, 0, 0, 0.2);
@@ -847,7 +1032,7 @@ body {
 
   .swiper-button-next,
   .swiper-button-prev {
-    display: none; 
+    display: none;
   }
 
   .btn-1 {
@@ -858,6 +1043,8 @@ body {
   .noticia {
     min-height: 50%;
   }
+
+  /*
 
   .footer-container {
     flex-direction: column;
@@ -878,27 +1065,80 @@ body {
   .footer-col a {
     font-size: 0.9rem;
   }
-
-  .footer-bottom {
-    font-size: 0.8rem;
+  */
+ .footer {
+    padding: 3rem 1rem;
   }
 
+  .footer-inner {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-form h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact-form h3::after {
+    width: 100px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    border-left: none;
+    border-top: 1px solid #e0e0e0;
+    min-height: 320px;
+    box-shadow: none;
+  }
+
+  .map::before {
+    display: none;
+  }
+
+  .map iframe {
+    min-height: 320px;
+  }
+
+  .social-icons {
+    gap: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .address {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .address p {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+    padding-top: 1rem;
+  }
   .whatsapp-float {
     width: 60px;
     height: 60px;
     font-size: 1.8rem;
     right: 40px;
     bottom: 40px;
-  }
-
-  .contacto-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .mapa-container {
-    align-items: center;
   }
 
 }
@@ -922,6 +1162,46 @@ body {
 
   .contenido-portada p {
     font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .contact-form h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .contact-form h3::after {
+    width: 80px;
+  }
+
+  input, textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .map {
+    min-height: 300px;
+  }
+
+  .map iframe {
+    min-height: 300px;
+  }
+
+  .social-icons {
+    gap: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .address {
+    font-size: 0.85rem;
   }
 
 }
@@ -962,22 +1242,68 @@ body {
     margin: 0 0.5rem 1rem;
   }
 
-  .mapa iframe {
-    width: 200px;
-    height: 140px;
+  .footer {
+    padding: 2.5rem 0.8rem;
   }
 
-  .footer-col h4 {
-    font-size: 1rem;
+  .contact-form {
+    padding: 1.5rem 1rem;
   }
 
-  .footer-col p,
-  .footer-col a {
-    font-size: 1rem;
+  .contact-form h3 {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.4rem;
+  }
+
+  .contact-form h3::after {
+    width: 70px;
+  }
+
+  input, textarea {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .map {
+    min-height: 280px;
+  }
+
+  .map iframe {
+    min-height: 280px;
+  }
+
+  .social-icons {
+    gap: 1rem;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .address {
+    font-size: 0.8rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+  }
+
+  .address p {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address i {
+    margin-bottom: 0.2rem;
   }
 
   .footer-bottom {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    padding: 0.8rem 0;
   }
 
   .whatsapp-float {
